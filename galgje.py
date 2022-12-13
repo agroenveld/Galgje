@@ -5,6 +5,8 @@ from random import choice
 import winsound
 from collections import Counter
 
+#hele oude shit
+
 #woordenlijst met woorden die tegen de galg aan kunnen worden gesmeten.
 try: 
     with open("woorden.txt", "rt") as f:# alleen-lezen van tekst
