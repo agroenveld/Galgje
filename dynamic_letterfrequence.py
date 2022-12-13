@@ -78,3 +78,4 @@ if __name__ == '__main__':
         letter, guessed_letters = pick_letter(clean_word_list,guessed_letters)
         print(post_letter(pin,letter))
         print(len(clean_word_list))
+        print('hello')
