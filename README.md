@@ -1,1 +1,1 @@
-<sup>Galgje</sup>
+<h1>*Galgje*</h1>
