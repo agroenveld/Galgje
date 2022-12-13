@@ -1,0 +1,34 @@
+
+venv (virtual environment)
+- voor versiebeheer mbt modules die je gebruikt binnen je project
+- per project een nieuwe venv maken
+- per project kan je dan aparte versies van modules installeren
+- installeer de venv in een subdirectory van je project
+- python3 -m venv venv in CMD
+- ctrl + shift p -->create in VSCODE
+- windows: venv/bin/activate.bat 
+- powershell: venv/scripts/Activate.ps1 
+- je kunt venvdir gewoon weggooien
+
+
+git (linus thorvalds)
+- gedistribueerd versiebeheer
+- iedereen heeft altijd de werkende code op zijn computer staan 
+- git = versiebeheer vanaf de commandline
+- hub = github social coding, centraleplek waar alle dingen samenkomen 
+- githubfuncties
+    - versiebeheer code 
+    - bijdragen aan open source projecten
+    - documenteer en wiki en markdown(opmaaktaal(html in normale tekst)) (https://daringfireball.net/projects/markdown/)
+    www.markdownguide.org
+    - review, comment, discussier, issue tracking
+- eerst nieuwe repository aanmaken online
+    -betekenisvolle naam
+    -description
+    -kies voor public zodat je de bestanden met de wereld deelt (readonly)
+    -gitIgnore wil je ook hebben (zegt rudi). Daar staat in wat niet mee hoeft in de upload
+    -ssh-keygen -t ed25519 -C d.veldkamp@mzh.nl in de user/.ssh dir "GEEN QUOTES OM HET EMAILADRES!!", GEEN PASSPHRASE, GEEN BESTANDSNAAM
+    -in nieuwe lege dir: git clone git@github.com:veldkad/mzh.git (haalt alle bestanden op en zet ze in de lokale repo)
+    -lokale repo: drie bomen: Working directory, index en head.
+    
+log 
