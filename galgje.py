@@ -32,7 +32,8 @@ def sessie():
     luckyShotsMissed = []
 
     for character in letterfrequentie:
-        start_time = perf_counter()
+        if character == 'e':            #start met tellen van de doorlooptijd
+            start_time = perf_counter()
         global miss
         global hit
         resultaat = web.post_letter(pin,character)
@@ -92,7 +93,7 @@ def sessie():
             print(colored(hit_miss(hit,miss),'blue','on_white',['bold']))
             print('-'*150)
             end_time = perf_counter()
-            return webmessage +  '<br><h5 align="center">' +  hit_miss(hit,miss) + " aantal sec: {:.4f}".format(end_time - start_time)
+            return webmessage +  '<br><h5 align="center">' +  hit_miss(hit,miss) + " aantal sec: {:.3f}".format(end_time - start_time)
 
 # for i in range(10000):
 #     sessie()
