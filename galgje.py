@@ -7,6 +7,7 @@ from woordenfilter import schoon_letters_kandidaatwoorden , schoon_gooiwoord_kan
 from art import tprint  
 import webgalg
 from time import perf_counter
+import datetime
 
 letterfrequentie = 'erinaotsldgkupmchbvfwjzyxq'     #dynamisch maken volgens de collectie van de woordendatabase
 hit = 0
@@ -93,7 +94,10 @@ def sessie():
             print(colored(hit_miss(hit,miss),'blue','on_white',['bold']))
             print('-'*150)
             end_time = perf_counter()
+            now = datetime.datetime.now()
+            dt_string = now.strftime("%Y/%m/%d %H:%M:%S")
+            with open("logfile.log","a") as logfile:
+                logfile.write(str(dt_string) + ':\t' + message + '\t\t' + " aantal sec: {:.3f}".format(end_time - start_time) +'\n'+ hit_miss(hit,miss) + '\n')
+
             return webmessage +  '<br><h5 align="center">' +  hit_miss(hit,miss) + " aantal sec: {:.3f}".format(end_time - start_time)
 
-# for i in range(10000):
-#     sessie()
