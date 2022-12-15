@@ -1,4 +1,4 @@
-<h1>Galgje oplosser</h1>
+<h1>Galgje oplosser - Google2</h1>
 
 Deze scriptjes lossen het galgje spel op van (http://beprek.nl/galgje)
 
